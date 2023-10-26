@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height:1000px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap:20px;
+    }
+    .img1{
+        grid-column: 1/span 2;
+        grid-row:1/2;
+    }
+    .img2{
+        grid-column:3/4;
+        grid-row:1/2;
+    }
+    .img3{
+        grid-column:1/2;
+        grid-row:2/span 2;
+    }
+    .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column:2/3;
+        grid-row: 3/4;
+    }
+    .img6{
+        grid-column: 3/4;
+        grid-row: 2/span 2;
+    }
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="img1 box">
+        <img src="https://cdn.pixabay.com/photo/2023/10/18/15/43/compass-8324516_1280.jpg" alt="" >
+        </div>
+        <div class="img2 box">
+            <img src="https://cdn.pixabay.com/photo/2023/10/20/00/50/australian-king-parrot-8327934_1280.jpg" alt="">
+        </div>
+        <div class="img3 box">
+            <img src="https://cdn.pixabay.com/photo/2023/10/15/18/12/swan-8317602_1280.jpg" alt="">
+        </div>
+        <div class="img4 box">
+            <img src="https://cdn.pixabay.com/photo/2023/10/20/13/48/tamarin-8329530_1280.png" alt="">
+        </div>
+        <div class="img5 box">
+            <img src="https://cdn.pixabay.com/photo/2023/10/19/20/59/houses-8327624_1280.jpg" alt="">
+        </div>
+        <div class="img6 box">
+            <img src="https://cdn.pixabay.com/photo/2023/10/19/04/24/ai-generated-8325514_1280.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

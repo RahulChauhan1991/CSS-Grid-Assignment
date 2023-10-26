@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<style>
+    .box{
+        background-color: yellow;
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .a{
+        grid-area: a;
+
+    }
+    .b{
+        grid-area: b;
+    }
+    .c{
+        grid-area:c;
+    }
+    .d{
+        grid-area: d;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+        grid-template-areas: 
+        "a a b"
+        "c d b";
+        align-items: start;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+    </div>
+</body>
+</html>
